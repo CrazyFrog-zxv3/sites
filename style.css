@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+.brack{
     background-color: black !important;
 }
 
@@ -18,7 +18,7 @@ body {
     transition: .3s;
 }
 .interface{
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 4%;
 }
@@ -71,22 +71,26 @@ body {
     color: black;
 }
 
-.oi{
-    height: 900vh;
-}
-
 .menu.rolando a{
     color: black;
 }
 
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .txt-top{
-    padding-top: 200px;
+    padding-top: 00px;
     color: #fff;
 }
 
 .txt-top span{
     color: red;
+    width:45%;
 }
+
 
 .btn-ag{
     display: flex;
@@ -116,5 +120,61 @@ body {
 .btns-top{
     display: flex;
     gap: 10px;
-    margin-top: 50px;
+}
+
+.img1{
+    display:inline-block;
+    width: 600px;
+    height: 300px;
+}
+
+.img-div{
+    width:50%;
+    padding-top: 200px;
+}
+
+.txt-btop h6{
+    margin-top: 30px;
+    color:red;
+}
+
+.txt-btop h4{
+    color: #fff;
+}
+
+.txt-btop p{
+    color: #fff;
+    font-weight: 10;
+}
+
+.txt-btop{
+    width:50%
+}
+
+.img-btop{
+    width: 50%
+}
+
+.img2{
+    width: 600px;
+    height: 300px;
+}
+
+.sec-ser{
+    background-color: rgb(197, 189, 189);
+    min-height: 500px;
+}
+
+
+.sec-ser{
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.geral{
+    border: 2px solid black;
+    min-width: 400px;
+    height: 400px;
+    background: white;
 }
