@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black !important;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: .3s;
+}
+.interface{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    height: 50px;
+}
+
+
+.menu span{
+    color: red;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-top{
+    display: flex;
+    background-color: red;
+    color: #fff;
+    padding: 4px;
+    max-width: 250px;
+    gap: 8px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.bi-car-front{
+    font-size: 25px;
+    color: red;
+}
+
+.menu.rolando{
+    background: #fff;
+    border-bottom: 5px solid #f503032f;
+    color: black;
+}
+
+.oi{
+    height: 900vh;
+}
+
+.menu.rolando a{
+    color: black;
+}
+
+.txt-top{
+    padding-top: 200px;
+    color: #fff;
+}
+
+.txt-top span{
+    color: red;
+}
+
+.btn-ag{
+    display: flex;
+    background-color: red;
+    color: #fff;
+    padding: 20px;
+    max-width: 250px;
+    gap: 8px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.btn-ns{
+    display: flex;
+    background-color: transparent;
+    border: 2px solid #fff;
+    min-width: 200px;
+    color: #fff;
+    padding: 20px;
+    max-width: 250px;
+    gap: 8px;
+    align-items: center;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btns-top{
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+}
