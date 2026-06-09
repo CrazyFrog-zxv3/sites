@@ -41,3 +41,57 @@ ScrollReveal().reveal('.img-btop', {
     duration: 1000,
     delay: 800,
 })
+
+const container = document.querySelector('.sec-ser');
+const btnLeft = document.querySelector('.scroll-left');
+const btnRight = document.querySelector('.scroll-right');
+
+btnLeft.addEventListener('click', () => {
+  container.scrollBy({ left: -200, behavior: 'smooth' }); // rola para a esquerda
+});
+
+btnRight.addEventListener('click', () => {
+  container.scrollBy({ left: 200, behavior: 'smooth' }); // rola para a direita
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const container = document.querySelector('.cards-depoimentos');
+    const dotsContainer = document.querySelector('.dots');
+    const cards = document.querySelectorAll('.card-depoimento');
+
+    const cardWidth = cards[0].offsetWidth + 20;
+
+    // criar bolinhas
+    cards.forEach((card, i) => {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+
+        if (i === 0) dot.classList.add('active');
+
+        dot.addEventListener('click', () => {
+            container.scrollTo({
+                left: cardWidth * i,
+                behavior: 'smooth'
+            });
+
+            setActive(i);
+        });
+
+        dotsContainer.appendChild(dot);
+    });
+
+    // scroll sync
+    container.addEventListener('scroll', () => {
+        const index = Math.round(container.scrollLeft / cardWidth);
+        setActive(index);
+    });
+
+    function setActive(index) {
+        document.querySelectorAll('.dot').forEach(d => d.classList.remove('active'));
+        if (document.querySelectorAll('.dot')[index]) {
+            document.querySelectorAll('.dot')[index].classList.add('active');
+        }
+    }
+
+});
