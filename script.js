@@ -1,8 +1,14 @@
 const menu = document.querySelector('.menu');
 
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.menu nav');
+const navs = document.querySelector('.menu nav.active');
+
 window.addEventListener('scroll', () => {
     if (window.scrollY > 0) {
         menu.classList.add('rolando');
+        navs.classList.toggle('tomas')
+
     } else {
         menu.classList.remove('rolando');
     }
@@ -94,4 +100,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+});
+
+
+hamburger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    // animação do hambúrguer
+    hamburger.classList.toggle('open');
 });
