@@ -399,3 +399,171 @@ l {
     display: flex;
     flex-direction: row;
 }
+
+.img1,
+.img2{
+    max-width: 100%;
+    height: auto;
+}
+
+#sob,
+#serv,
+#dep{
+    scroll-margin-top: 80px;
+}
+
+/* ==========================
+   TABLETS
+========================== */
+@media screen and (max-width: 992px){
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .txt-top,
+    .txt-btop,
+    .img-div,
+    .img-btop{
+        width: 100%;
+    }
+
+    .img1,
+    .img2{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .btns-top{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .con2{
+        justify-content: center;
+    }
+
+}
+
+/* ==========================
+   CELULARES
+========================== */
+@media screen and (max-width: 768px){
+
+    /* MENU */
+    .menu{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 15px 0;
+        gap: 15px;
+    }
+
+    .menu nav{
+        width: 100%;
+    }
+
+    .menu ul{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .btn-top{
+        display: none;
+    }
+
+    /* HERO */
+    .txt-top{
+        padding-top: 120px;
+    }
+
+    .txt-top h2{
+        font-size: 2rem;
+    }
+
+    .txt-top p{
+        font-size: .9rem;
+    }
+
+    .txt-top br,
+    .txt-btop br{
+        display: none;
+    }
+
+    .img1,
+    .img2{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* BOTÕES */
+    .btns-top{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-ag,
+    .btn-ns{
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    /* SERVIÇOS */
+    .geral{
+        min-width: 250px;
+    }
+
+    /* DEPOIMENTOS */
+    .cards-depoimentos{
+        max-width: 90%;
+    }
+
+    .card-depoimento{
+        flex: 0 0 220px;
+    }
+
+    /* CONTATO */
+    .con2{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+/* ==========================
+   CELULARES PEQUENOS
+========================== */
+@media screen and (max-width: 480px){
+
+    .txt-top h2{
+        font-size: 1.5rem;
+    }
+
+    .txt-btop h4{
+        font-size: 1.2rem;
+    }
+
+    .titulo-depoimentos{
+        font-size: 1.5rem;
+    }
+
+    .geral{
+        min-width: 220px;
+        height: 260px;
+    }
+
+    .mec{
+        font-size: 55px;
+    }
+
+    .btn-ag,
+    .btn-ns{
+        padding: 15px;
+        font-size: .9rem;
+    }
+
+}
