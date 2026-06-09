@@ -7,23 +7,15 @@ const navs = document.querySelector('.menu nav.active');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 0) {
         menu.classList.add('rolando');
-        navs.classList.toggle('tomas')
-
     } else {
         menu.classList.remove('rolando');
     }
 });
 
-ScrollReveal().reveal('.brack', {
-    origin: 'left',
-    distance: '80px',
-    duration: 1000,
-})
 ScrollReveal().reveal('.txt-top', {
     origin: 'left',
     distance: '80px',
     duration: 1000,
-    delay: 500,
 })
 
 ScrollReveal().reveal('.img-div', {

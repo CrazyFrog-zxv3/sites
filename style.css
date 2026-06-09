@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    transition: 0.5s;
 }
 
 .brack{
@@ -48,7 +47,6 @@
     top: 0;
     width: 100%;
     z-index: 99999999;
-    transition: .3s;
 }
 .interface{
     max-width: 1200px;
@@ -62,6 +60,7 @@
     align-items: center;
     color: #fff;
     height: 50px;
+    transition: 0.5s !!important;
 }
 
 
@@ -96,6 +95,13 @@
     gap: 8px;
     align-items: center;
     border-radius: 5px;
+}
+
+.menu li,
+.btn-top,
+.btn-ag,
+.btn-ns{
+    transition: 0.6s ease !important;
 }
 
 .bi-car-front{
