@@ -63,7 +63,11 @@
     transition: 0.5s !!important;
 }
 
-
+@media screen and (max-width: 768px){
+    .brack{
+        background-size: 100% 50%;
+    }
+}
 .menu span{
     color: red;
 }
