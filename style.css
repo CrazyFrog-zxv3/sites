@@ -65,8 +65,9 @@
 
 @media screen and (max-width: 768px){
     .brack{
-        background-size: 100% 50%;
-    }
+        min-height: 60vh;
+        background-size: cover;
+        background-position: center;}
 }
 .menu span{
     color: red;
