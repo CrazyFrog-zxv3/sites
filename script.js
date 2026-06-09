@@ -14,10 +14,16 @@ window.addEventListener('scroll', () => {
     }
 });
 
+ScrollReveal().reveal('.brack', {
+    origin: 'left',
+    distance: '80px',
+    duration: 1000,
+})
 ScrollReveal().reveal('.txt-top', {
     origin: 'left',
     distance: '80px',
     duration: 1000,
+    delay: 500,
 })
 
 ScrollReveal().reveal('.img-div', {
@@ -108,3 +114,8 @@ hamburger.addEventListener('click', () => {
     // animação do hambúrguer
     hamburger.classList.toggle('open');
 });
+
+const he = document.querySelector('.hero')
+const hehe = he.parentElement
+
+hehe.style.backgroundColor = 'black'
